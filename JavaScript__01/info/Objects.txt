@@ -1,0 +1,244 @@
+	Objects
+
+У объектов есть свойства.
+
+Если какое-то свойство содержит функцию как значение, то такое свойство называется метод.
+
+Практически все сущности в JS - это объекты!
+
+
+Объект - набор свойств "ИМЯ: значение" !
+
+Объект - это тип значений.
+Объект - это тип переменных.
+
+
+! Структура objects :
+
+const myCity = {
+	city: 'New York',
+	popular: true,
+	country: 'USA'
+}
+
+
+Об objects:
+
+1. порядок свойств в object не имеет значения!
+
+
+! Получение значений свойств:
+
+const myCity = {
+	city: 'New York',
+	popular: true,
+	country: 'USA'
+}
+
+console.log('myCity.city')
+//New York
+
+console.log('myCity.country')
+//USA
+
+myCity.country - этот синтаксис называется dot notation(точечная запись) !
+
+
+! Изменение значений свойств:
+
+const myCity = {
+	city: 'New York',
+	popular: true,
+	country: 'USA'
+}
+
+myCity.city = 'Las Vegas'
+
+console.log(myCity.city)
+//Las Vegas
+
+
+! Добавление новых свойств:
+
+const myCity = {
+	city: 'New York'
+}
+
+myCity.popular = true
+myCity.country = 'USA'
+
+console.log(myCity)
+//{ city: 'Las Vegas', popular: true, country: 'USA' }
+
+
+
+! Удаление свойств:
+
+const myCity = {
+	city: 'New York',
+	popular: true,
+	country: 'USA'
+}
+
+delete myCity.country
+
+console.log(myCity)
+//{ city: 'New York', popular: true }
+
+
+
+! Доступ к значению свойства с использованием кнопок:
+
+const meinHaus = {
+    city: 'Salzwedel'
+}
+
+console.log(meinHaus)
+
+meinHaus['popular'] = true
+
+console.log(meinHaus)
+//{ city: 'Salzwedel' }
+  { city: 'Salzwedel', popular: true }
+
+
+const countryPropertyName = 'country'
+
+meinHaus[countryPropertyName] = 'Deutschland'
+
+console.log(meinHaus)
+//{ city: 'Salzwedel', popular: true, country: 'Deutschland' }
+
+
+!!!! meinHaus[countryPropertyName] - bracket notation(скобоная запись) !!!!
+
+! ОБЪЕКТЫ. ВЛОЖЕННЫЕ СВОЙСТВА:
+
+const myStadt = {
+    city: 'New York',
+    info: {
+        isPopular: true,
+        country: 'USA' 
+    }
+}
+
+console.log(myStadt.info)
+//{ isPopular: true, country: 'USA' }
+
+delete myStadt.info.country
+
+console.log(myStadt.info)
+//{ isPopular: true }
+
+
+
+! ОЪЕКТЫ. ИСПОЛЬЗОВАНИЕ ПЕРЕМЕННЫХ:
+
+const nameV = 'Veniamin'
+const postsQty = 18
+
+const userProfile = {
+    nameV: nameV,
+    postsQty: postsQty,
+    hasSignedAgreement: false
+}
+
+JavaScript имеет сокращённый вид записи, если свойства совпадают по названию со значениями(в данном случае в виде значений мы задали переменные!):
+
+const nameV = 'Veniamin'
+const postsQty = 18
+
+const userProfile = {
+    nameV,
+    postsQty,
+    hasSignedAgreement: false
+}
+
+
+
+! ГЛОБАЛЬНЫЕ ОБЪЕКТЫ:
+
+Глобальные объекты существуют:
+
+- window(Веб-браузеры);
+
+- global(Node.js).
+
+
+Унифицированный глобальный объект:
+
+- globalThis.
+
+
+Свойства глобальных объектов:
+
+- console;
+
+- window.console;
+
+- global.console.
+
+
+
+! МЕТОДЫ ОБЪЕКТА:
+
+Метод - свойство объекта, значение которого - функция.
+
+const myHeim = {
+    stadtS: 'Salzwedel',
+    cityGreeting: function () {
+        console.log('Greetings!!!')
+    }
+}
+
+myHeim.cityGreeting()
+
+Сокращённый формат записи методов:
+
+const myHeim = {
+    stadtS: 'Salzwedel',
+    cityGreeting() {
+        console.log('Greetings!!!')
+    }
+}
+
+myHeim.cityGreeting()
+
+
+
+! Доступ к значению метода и свойства объектов:
+
+myHeim.stadtS - доступ к значению объекта.
+
+myHeim.cityGreeting() - вызов метода.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

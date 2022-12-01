@@ -1,0 +1,94 @@
+	JSON
+
+JSON - JavaScript Object Notation
+
+Это формат обмена данными:
+
+{
+	"userId": 1,
+	"id": 1,
+	"title": "Test title",
+	"status": {
+		"completed": false
+	}
+}
+
+Такими данными могут быть:
+
+- таблицы стилей CSS;
+
+- картинки;
+
+- текстовые данные, которые необходимо отобразить на странице. Нпример, список постов, профиль пользователя и т.д.
+
+Такие данные передаются с серверов с помощью формата JSON!
+
+
+
+! ПЕРЕДАЧА ДАННЫХ В ФОРМАТЕ JSON:
+
+Передача происходит в виде строки:
+
+{"userId": 1,"id": 1,"title": "Test title","status": {"completed": false}}
+
+
+
+! КОНВЕРТАЦИЯ JSON В ОБЪЕКТ:
+
+Конвертация JavaScript в JSON:
+
+const post = {
+    title: 'My post',
+    likesQty: 5
+}
+
+JSON.stringify(post)
+
+console.log(JSON.stringify(post))
+
+
+Конвертация JSON в JavaScript:
+
+JSON.parse(postStringifield)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

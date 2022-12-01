@@ -1,0 +1,214 @@
+Самое важное в JavaScript:
+- выражения;
+- функции;
+- объекты (практически все сущности).
+
+
+
+ОБЪЕКТ
+
+Практически все сущности в JS - объекты.
+Объект - набор свойств ("Имя: значение").
+
+Пример:
+{
+   visible: true,
+   title: 'My Image',
+
+   (Вложенный объект!)
+   orientation: {
+      angle: 0,
+      type: 'landscape'
+   },
+   PixelDepth: 24,
+   width: 1440	
+}
+
+Массив, Функция, Число(10,20,30), Строка в JavaScript - объекты!!!
+
+console.log('Hello World') :
+console - объект
+"." - синтаксис JavaScript, который называется "точечная запись". С помощью точечной записи мы получаем доступ к методу объекта!
+log - метод(функция, которая является значением объекта)
+( ) - вызова метода(вызов функции). 
+Внутри вызова метода находится аргумент, в данном случае значение типа "String" - Hello World.
+Значение типа "String" - строка, помещаются в одинарные или двойные кавычки!
+
+console.dir() - отображает все свойства объекта.
+
+console.table() - отображает всё свойства объекта в табличном виде.
+
+
+
+ВЫРАЖЕНИЕ
+
+Любое выражение всегда возвращает значение!
+
+Пример выражения:
+
+- 'abc' - this is the string 'abc'. A string in JavaScript is text inside quotes! If we write this text like this, then the translator will return it to us back!
+
+- 10 - If we write this number like this, then the translator will return it to us back!
+
+- 5 + 2: 
+'+' - this is the operator. The result of this expression(выражения) will be 7.
+
+- c = 10 :
+'=' - this is an assignment(присваивания) operator. 10 is assigned to variable(переменной) "c".
+
+- 'Good' + 'Evening' :
+Joining(Соединение) strings. The result of this expression will be 'Good Evening'
+
+- a <= b || c !== d :
+This is an expression with multiple(несколькими) operators.
+"<=" - this is the "less(меньше) or equal" operator.
+"||" - this is the "or" operator.
+"!==" - this is the "not equal(не равно)" operator.
+
+- myFunction(c,d) :
+This is a function call(вызов). Here:
+myFunction - this is the function, that(которая) is called.
+"c, d" are arguments.
+ 
+
+Assignment expression:
+
+a = 20
+
+Expressions with side(побочными) effects(действиями) :
+(не только возвращает значения, но и выполняет другие действия!)
+
+- a = 5 :
+this is an assignment operator.
+
+- b++ :
+"++" - этот оператор увеличивает значение переменной на 1. Если переменная "b" содержала значение 6, то после оператора "++" значение переменной "b" будет увеличено до 7!
+
+
+
+	VARIABLES(Переменные):
+
+Variables - дают возможность повторного доступа к значениям.
+Это контейнеры для значений!
+
+Variable names: 
+B JS переменным можно задавать любые имена, но есть рекоммендации для читабельного кода:
+
+- PascalCase(используется для названий типов и классов в JS):
+название переменной всегда начинается с заглавной буквы - Pascal..
+другие слова, которые являются частью переменной, также должны называться с заглавной буквы - ..Case
+
+- DB_PASSWORD(значения известны до запуска приложения и не меняются):
+все буквы заглавные и между словами используется знак "_"
+DB - одна часть названия переменной, PASSWORD - другая!
+
+- camelCase(все остальные переменные):
+первая буква всегда в нижнем регистре!
+
+! НАЗВАНИЯ ПЕРЕМЕННЫХ ДОЛЖНЫ БЫТЬ ОЧЕНЬ ПОНЯТНЫМИ !
+! Должна быть логика в названиях !
+
+Объявление переменных:
+
+- let: 
+1) let a(объявление) = 10(присваивание)
+если мы используем ключевое слово "let", то далее мы можем переприсваивать значение этой переменной!
+   a = 20
+
+2) let b
+   
+   b = false
+
+- const: 
+const c = 10 (объявление и присваивание)
+если мы используем ключевое слово "const", то мы должны в одной строке сразу же присвоить значение переменной! Далее мы уже не можем присвоить новое значение!
+
+- var: 
+не рекомендуется использовать var в связи с тем, что он устарел.
+
+
+
+	VARIABLE TYPE
+
+The type of the variable is determined by the type of the assigned value!(Тип переменной определяется типом присвоенного значения!)
+
+- const a = 10:
+variable а - this is a number. 
+
+- const b = 'abc':
+variable b - this is the string.
+
+
+
+	TYPES
+
+Primitive types:
+
+- string(строка);
+- boolean(логический);
+true or false
+
+- number(число);
+- null;
+используется, чтобы показать явно, что у какой-то переменной значение отсутствует! is used to explicitly show that some variable has no value!
+
+
+- undefined;
+такое значение значит, что значения у переменной нет! such a value means that the value does not matter!
+отличие от null в том, что в нём мы задаём сами такое значение! the difference from null is that in it we ourselves set such a value!
+
+- symbol(символ).
+используя этот тип, вы можете создавать уникальные значения! using this type you can create unique values! 
+
+
+
+	REFERENCE(ссылочный) TYPE -
+- object(объект)
+
+
+
+	ДИНАМИЧЕСКАЯ ТИПИЗАЦИЯ
+
+- Статическая типизация:
+
+String a = 'abc'
+
+int b = 10
+
+b = 'xyz' //Error
+
+Такого нет в JavaScript, ибо это не нужно!
+
+- Динамическая типизация:
+
+a = 'abc' //String
+
+a = 10    //Number
+
+JavaScript - динамически типизируемый язык!
+
+
+
+	ПРАВИЛА РАБОТЫ С ПЕРЕМЕННЫМИ
+
+1. Все переменные объявлять перед их использованием!
+
+2. Стараться использовать const везде, где это возможно!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

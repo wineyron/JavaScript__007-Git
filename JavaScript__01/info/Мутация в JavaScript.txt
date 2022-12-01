@@ -1,0 +1,124 @@
+	! МУТАЦИЯ В JAVASCRIPT !
+
+! Значения примитивных типов:
+
+const a = 10
+
+let b = a
+
+b = 30
+
+console.log(a) //10
+
+console.log(b) //30
+
+
+
+! Как избежать мутаций:
+
+1 вариант:
+
+const person = {
+    namePerson: 'Veniamin',
+    agePerson: 15
+}
+
+const person2 = Object.assign({}, person)
+
+person2.agePerson = 18
+
+console.log(person.agePerson) //15
+console.log(person2.agePerson) //18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
